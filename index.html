@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet" />
+    <title> Clientes</title>
+</head>
+
+<body>
+    <section>
+
+    <div id="fm">
+         <fieldset>
+        <legend>Cadastro de Clientes</legend>
+        <form>
+        <div class="form-group">
+
+            <label><pre>  Código:</pre></label>
+            <input class="input-control" type="number" step="2" id="codigo" />
+
+            <label class="right-inline">Nome/Razão social:</label>
+            <input class="input-control" type="text" step="1" id="nome" />
+
+            <label class="right-inline">RG/IE:</label>
+            <input class="input-control" type="number" step="3" id="rgie" />
+        </div>
+        <div class="form-group">
+
+            <label class="right-inline">Endereço:</label>
+            <input class="input-control" type="text" size="20" id="endereco" />
+        </div>
+        <div class="form-group">
+            <label class="right-inline">Bairro:</label>
+            <input class="input-control" type="name" size="10" id="bairro" />
+
+            <label class="right-inline">Cidade:</label>
+            <input class="input-control" type="name" size="40" id="cidade" />
+        </div>
+        <div class="form-group">
+            <label class="right-inline">CEP:</label>
+            <input class="input-control" type="number" size="40" id="cep" />
+
+            <label class="right-inline">UF:</label>
+            <input class="input-control" type="text" size="10" maxlength="2" id="uf" />
+        </div>
+        <div class="form-group">
+
+            <label class="right-inline">Telefone:</label>
+            <input class="input-control" type="text" size="40" maxlength="8" id="telefone" />
+
+              <label class="right-inline">Celular:</label>
+            <input class="input-control" type="number" size="-10" maxlength="11" id="celular" />
+        </div>
+        <div class="form-group">
+
+             <label class="right-inline">CPF/CNPJ:</label>
+            <input class="input-control" type="number" size="34" maxlength="11" id="cpf" />
+
+            <label>Nome fantasia:</label>
+            <input class="input-control" type="text" size="2" maxlength="20" id="nome_fantasia" />
+
+            <label class="right-inline">Contato:</label>
+            <input class="input-control" type="number" size="-15" id="contato" />
+
+            </div>
+            <div class="form-group"> 
+
+            <label class="right-inline">E-mail pessoal:</label>
+            <input class="input-control" type="email" size="10" id="email" />
+
+            <label class="right-inline">Nascimento:</label>
+            <input class="input-control" type="date" size="4" id="data" />
+
+           </div>
+
+           
+        
+        <div class="form-group">
+            <label><pre>  Observações</pre></label>
+            <textarea class="input-control" id="observacoes"></textarea>
+
+        </div>
+
+        <div class="form-group">
+                    <label></label>
+                    <button id="salvar">💾 Salvar</button>
+                    <button id="cancelar">❌ Cancelar</button>
+                    <a href="produtos.html"><button type="button" id="mais_dados">Mais dados...</button></a>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+        <div id="listagem"></div>
+    <script src="cliente.js"></script>
+    </section>
+</body>
+
+</html>
